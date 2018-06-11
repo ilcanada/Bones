@@ -1,0 +1,91 @@
+JFDML JFormDesigner: "6.0.3.0.150" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "Pro Bones Collector & Prayer Booster!"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\raywa\\Desktop\\rsgold.png" )
+			"background": sfield java.awt.Color white
+			"foreground": new java.awt.Color( 204, 255, 255, 255 )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Start"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 130
+				"y": 85
+				"height": 20
+				"width": 100
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "Cows 1"
+					addElement( "Cows 1" )
+					addElement( "Cows 2" )
+					addElement( "Chicken Pin" )
+					addElement( "Goblins " )
+					addElement( "Wilderness" )
+				}
+				"toolTipText": "Choose Your Loction Please"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 15
+				"height": 20
+				"width": 265
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Please Choose Your Gather Location"
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+				"foreground": sfield java.awt.Color red
+				"background": sfield java.awt.Color black
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 0
+				"width": 300
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox2"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "Bones"
+					addElement( "Bones" )
+					addElement( "Big bones" )
+					addElement( "Dragon bones" )
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 60
+				"height": 20
+				"width": 265
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Please Choose Which Item To Gather"
+				"font": #SwingDerivedFont0
+				"foreground": sfield java.awt.Color red
+				"background": sfield java.awt.Color black
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 300
+				"height": 16
+				"x": 20
+				"y": 45
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Script by; ilcanada6"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 265
+				"y": 100
+				"width": 120
+				"height": 11
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 130 )
+			"size": new java.awt.Dimension( 385, 145 )
+		} )
+	}
+}
